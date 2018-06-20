@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+    img {
+        width: 400px;
+    }
+    .site-img {
+        border: 0px 40px 0px 0px solid transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <img src="https://vignette.wikia.nocookie.net/logopedia/images/a/a5/Windows_logo_-_2002%E2%80%932012_%28Multicolored%29.svg.png/revision/latest?cb=20160311150047" class="site-img" alt="Laptop">
+    </div>   
+</body>
+<script>
+    const laptop = document.querySelector('.site-img');
+    laptop.addEventListener('mouseover', (e) => {
+        e.target.style.borderRight = '40px solid green';
+        e.target.style.borderLeft = '40px solid blue';
+        e.target.style.borderTop = '40px solid red';
+        e.target.style.borderBottom = '40px solid Yellow';
+    });
+    laptop.addEventListener('mouseout', (e) => {
+        e.target.style.borderRight = '40px solid transparent';
+        e.target.style.borderTop = '40px solid transparent';
+        e.target.style.borderLeft = '40px solid transparent';
+        e.target.style.borderBottom = '40px solid transparent';
+    });
+</script>
+</html>
